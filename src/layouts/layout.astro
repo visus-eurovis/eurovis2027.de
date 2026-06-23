@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import DSGVO from '../components/dsgvo.md';
 
 const { frontmatter } = Astro.props;
 ---
@@ -16,14 +17,24 @@ const { frontmatter } = Astro.props;
 		<title>{frontmatter.title}</title>
 	</head>
 	<body>
-  <h1>{frontmatter.title}</h1>
-  <h2>{frontmatter.description}</h2> 
-		<slot />
+
+    <div class="dsgvo">
+      <DSGVO />
+    </div>
+
+    <h1>{frontmatter.title}</h1>
+
+    <h2>{frontmatter.description}</h2>
+
+    <div class="content">
+      <slot />
+		</div>
+    
 	</body>
 </html>
 
 
-<!-- Here, astro prepends BASE_URL automatically -->
+<!-- Here, astro prepends BASE_URL automatically to font urls -->
 <style is:global>
 
 @font-face {
@@ -38,16 +49,7 @@ const { frontmatter } = Astro.props;
 
 html,
 body {
-  margin: 0;
-  width: 100%;
-  height: 100%;    
   font-family: 'Satoshi-Light', system-ui, -apple-system, sans-serif;
-}
-
-h1,
-h2,
-p {
-  text-align: center;
 }
 
 </style>

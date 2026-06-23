@@ -1,0 +1,1 @@
+&nbsp; &nbsp; [This Website does not use any Cookies] &nbsp; [[Legal Notice](https://www.uni-stuttgart.de/en/legal-notice)] &nbsp; [[Privacy Notice](https://www.uni-stuttgart.de/en/privacy-notice)]
