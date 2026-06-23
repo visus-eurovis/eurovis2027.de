@@ -1,8 +1,8 @@
 #  International Eurographics Visualization Conference 2027 (EuroVis)
 
-This is the Webite of the 29th EuroVis 2027 conference hosted by the [Visualization Research Center (VISUS)](https://www.visus.uni-stuttgart.de/en/) of the University of Stuttgart.
+This is the website for the 29th EuroVis 2027 Conference, which will take place in [Stuttgart](https://www.openstreetmap.org/relation/5294338) and is organized by the [Visualization Research Center at the University of Stuttgart (VISUS)](https://www.visus.uni-stuttgart.de/en/).
 
-## Local usage
+## Usage
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
