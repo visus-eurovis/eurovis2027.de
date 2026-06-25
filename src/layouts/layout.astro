@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import DSGVO from '../components/dsgvo.md';
+import { SEO } from "astro-seo";
 
 const { frontmatter } = Astro.props;
 ---
@@ -15,6 +16,28 @@ const { frontmatter } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
     <!-- <link rel="stylesheet" href= {import.meta.env.BASE_URL +"/src/styles/global.css"} /> -->
 		<title>{frontmatter.title}</title>
+    <SEO
+      title={frontmatter.title}
+      titleTemplate="%s - EuroVis 2027"
+      description="This is the website for the 29th Eurographics Conference on Visualization (EuroVis), which will take place 2027 in Stuttgart, Germany and is organized by the Visualization Research Center (VISUS) of the University of Stuttgart."
+      canonical="https://eurovis27.github.io/web/"
+      noindex={false}
+      nofollow={false}
+      openGraph={{
+        basic: {
+          title: frontmatter.title || "EuroVis 2027",
+          type: "website",
+          image: "/seo-screen.png",
+          url: "https://eurovis27.github.io/web/",
+        },
+        optional: {
+          locale: "en_US",
+          siteName: "EuroVis 2027",
+          description:
+            "This is the website for the 29th Eurographics Conference on Visualization (EuroVis), which will take place 2027 in Stuttgart, Germany and is organized by the Visualization Research Center (VISUS) of the University of Stuttgart.",
+        },
+      }}
+    />
 	</head>
 	<body>
 

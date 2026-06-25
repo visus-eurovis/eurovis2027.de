@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://eurovis27.github.io/web/
+
+# Block access to admin or sensitive areas if needed
+# Disallow: /admin/
+# Disallow: /private/
